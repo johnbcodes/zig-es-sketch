@@ -1,0 +1,17 @@
+.{
+    .name = "zig-es-sketch",
+    .version = "0.1.0",
+    .paths = .{""},
+    .dependencies = .{
+        .sqlite = .{
+            // Using my feature branch that includes Transaction API that has not been merged
+            // with the canonical repository,
+            .url = "https://github.com/johnbcodes/zig-sqlite/archive/e2f784797f7f2d3a8b116ccb66bc22df949379d0.tar.gz",
+            .hash = "1220e336758feb720d635b68fa2b8deed449e75e37b918e3bdbef26fef287705baf2",
+        },
+        .uuid6 = .{
+            .url = "https://github.com/jdknezek/uuid6-zig/archive/f849a3da0b8dc5dfc9a5740ba34f419d30909093.tar.gz",
+            .hash = "1220d16adaadf91606ff25564b176625afb15feb6c6ba2e54ab16a5ab2c17a5d3215",
+        },
+    },
+}
